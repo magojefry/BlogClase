@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #instalacion de app + configuracion de auth.user
+    'BlogClase_api.apps.users.apps.UsersConfig',
+
 ]
 
 MIDDLEWARE = [
@@ -121,3 +124,6 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+#configuracion de usuarios de Auth.User
+AUTH_USER_MODEL = 'users.User'
