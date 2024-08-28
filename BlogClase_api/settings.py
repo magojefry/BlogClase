@@ -37,8 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    #instalacion de app + configuracion de auth.user
-    'BlogClase_api.apps.users.apps.UsersConfig',
+    #añado apps
+    'BlogClase_api.apps.users',
+    'BlogClase_api.apps.blogs',
 
 ]
 
