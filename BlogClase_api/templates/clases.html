@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clases</title>
+</head>
+<body>
+
+    <h1>Clase 1 (15/agosto/2024)</h1>
+    <p> 
+        <p>
+            seguridad informatica:
+            Phishing es una tecnica de engaño en línea donde delincuentes se hacen pasar por 
+            empresas confiables para robar información personal. Los virus son programas 
+            maliciosos que infectan dispositivos, dañan archivos y roban información. 
+            La protección de datos personales implica usar contraseñas fuertes y verificar 
+            la privacidad en línea. El robo de información ocurre cuando alguien accede 
+            a tus datos sin permiso; protegerse implica usar contraseñas seguras y autenticación 
+            de dos factore
+        </p>
+        
+        <p>
+            almacenamiento en la nuve:
+            El almacenamiento en la nube permite guardar tus archivos en Internet en lugar de en tu dispositivo. Usando servicios como Google Drive o Dropbox, puedes almacenar documentos, fotos y videos, y acceder a ellos desde cualquier lugar con conexión a Internet. Esta opción facilita compartir archivos con otras personas y asegura que tus datos estén respaldados y protegidos en caso de problemas con tu dispositivo. Sin embargo, es importante usar contraseñas seguras para proteger tu cuenta y revisar quién tiene acceso a tus archivos compartidos para mantener la privacidad de tu información.
+        </p>
+        <p>
+            Inteligencia artificial:
+            La inteligencia artificial (IA) está cambiando la forma en que los bancos manejan sus sistemas administrativos. Bancos como Lulo y Nubank utilizan IA para mejorar sus servicios y operaciones. La IA ayuda a estos bancos a automatizar tareas, como el procesamiento de transacciones y la gestión de cuentas. También se usa para detectar fraudes al analizar patrones sospechosos en las transacciones y para ofrecer recomendaciones personalizadas a los clientes.
+            Además, la IA facilita el servicio al cliente mediante chatbots que responden preguntas y resuelven problemas de manera rápida. Esto hace que los procesos sean más eficientes y que los clientes reciban una atención más rápida y precisa. En resumen, la IA está haciendo que los bancos sean más inteligentes y eficientes al optimizar sus operaciones y mejorar la experiencia del cliente.
+            Reforzar tema sobre lulo bank 
+
+        </p>
+    </p>
+    
+    <p>
+
+        <h1>Clase 2 (22/agosto/2024)</h1>
+        <br>Inteligencia artificial: fundamentos filosóficos
+        <br>Idealistas: el conocimiento viene de las ideas
+        <br>materialismo: ciertas políticas puede crear ciertos movimientos y cambios de la comunidad
+        <br>empirismo: todo conocimiento debe surgir de la experiencia
+        <br>existencialismo: 
+        <br>pragmatismo:utilización de los recursos o herramientas de forma equilibrada
+        <br>humanismo: sentimientos
+        <br>complementar anteriores
+        <br>Racionalismo: ideal a partir de la razón y cálculos científicos 
+        
+        <p>
+            Los orígenes de la inteligencia artificial (IA) se remontan a mediados del siglo XX, 
+            cuando científicos como Alan Turing y John McCarthy comenzaron a explorar la idea de 
+            máquinas que pudieran simular la inteligencia humana.
+        </p>
+        <p>
+            La inteligencia artificial moderna se centra en técnicas como el aprendizaje automático
+             y profundo, que permiten a las máquinas aprender de datos y tomar 
+             decisiones de forma autónoma. Estos avances han impulsado aplicaciones en reconocimiento 
+             de voz e imagen, procesamiento del lenguaje, y más, transformando muchas industrias.
+        </p>
+    </p>
+
+    <p>
+        <h1>Clase (29/agosto/2024)</h1>
+        <p>
+        <a href="https://colab.research.google.com/drive/14C4Yo_gCBY6lGQoNUhaOeY5my1QlOvjx?usp=sharing"></a>
+        <br>
+        import tensorflow as tf
+        <br>import numpy as np
+        </p>
+        
+        <p>celsius = np.array([-40, -10, 0, 8, 15, 22, 38], dtype=float)
+        <br>fahrenheit = np.array([-40, 14, 32, 46, 59, 72, 100], dtype=float)
+        </p>
+        
+        
+        <p>capas = tf.keras.layers.Dense(units=1, input_shape=[1])
+        <br>modelos = tf.keras.Sequential([capas])
+        <br>modelos.compile(
+            <br>optimizer=tf.keras.optimizers.Adam(0.1),
+            <br>loss ='mean_squared_error'
+        <br>)
+        </p>
+        
+        <p>print("Iniciando entrenamiento ...")
+        <br>historial = modelos.fit(celsius, fahrenheit, epochs=1000, verbose=False)
+        <br>print("modelo entrenado")
+        </p>
+        
+        <p>import matplotlib.pyplot as plt
+        <br>plt.xlabel("# Epoca")
+        <br>plt.ylabel("Magnitud de perdida")
+        <br>plt.plot(historial.history["loss"])
+        </p>
+        
+        <p>print("Prediccion")
+        <br>resultado  = modelos.predict(np.array([100.0]))
+        <br>print("el resultado es " + str(resultado) + "fahrenheit")
+        </p>    
+        
+        <p>print("variables internas del modelo")
+        <br>print(capas.get_weights())
+        </p>
+
+    </p>
+
+
+
+
+
+
+    
+</body>
+</html>
